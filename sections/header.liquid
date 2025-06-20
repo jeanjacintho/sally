@@ -1,4 +1,4 @@
-<header>
+<header class="color-scheme color-scheme--{{ section.settings.color_scheme.id }}">
   <h2 class="header__title">
     {{ shop.name | link_to: routes.root_url }}
   </h2>
@@ -60,6 +60,12 @@
       "type": "link_list",
       "id": "menu",
       "label": "t:labels.menu"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:global.colors.scheme",
+      "default": "scheme-2"
     }
   ]
 }

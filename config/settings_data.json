@@ -1,12 +1,53 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
-  "current": {}
+  "current": {
+    "color_schemes": {
+      "scheme-1": {
+        "settings": {
+          "background": "#e3e3e3",
+          "text_color": "#1c1c1c",
+          "primary_button_background": "#1c1c1c",
+          "primary_button_text_color": "#faf9f6",
+          "circle_button_background": "#faf9f6",
+          "circle_button_icon": "#1c1c1c"
+        }
+      },
+      "scheme-2": {
+        "settings": {
+          "background": "#faf9f6",
+          "text_color": "#1c1c1c",
+          "primary_button_background": "#1c1c1c",
+          "primary_button_text_color": "#faf9f6",
+          "circle_button_background": "#faf9f6",
+          "circle_button_icon": "#1c1c1c"
+        }
+      },
+      "scheme-3": {
+        "settings": {
+          "background": "#1c1c1c",
+          "text_color": "#faf9f6",
+          "primary_button_background": "#faf9f6",
+          "primary_button_text_color": "#1c1c1c",
+          "circle_button_background": "#faf9f6",
+          "circle_button_icon": "#1c1c1c"
+        }
+      },
+      "scheme-4": {
+        "settings": {
+          "background": "rgba(0,0,0,0)",
+          "text_color": "#faf9f6",
+          "primary_button_background": "#faf9f6",
+          "primary_button_text_color": "#1c1c1c",
+          "circle_button_background": "#faf9f6",
+          "circle_button_icon": "#1c1c1c"
+        }
+      }
+    },
+    "success_color": "#5cb85c",
+    "warning_color": "#ffd500",
+    "error_color": "#d9534f",
+    "product_rating_color": "#1c1c1c",
+    "product_on_sale_accent": "#e32c2b",
+    "product_sold_out_badge_background": "#e3e3e3",
+    "product_custom_badge_background": "#1c1c1c"
+  }
 }

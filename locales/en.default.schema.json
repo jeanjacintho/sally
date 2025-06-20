@@ -33,6 +33,76 @@
     "theme": "Theme",
     "typography": "Typography"
   },
+  "theme_settings": {
+    "appearance": {
+      "name": "Appearance",
+      "info_paragraph": "Customize the visual appearance of your theme",
+      "icon_thickness": "Icon stroke width",
+      "section_spacing_category": "Section spacing",
+      "vertical_space_between_sections": "Vertical space between sections",
+      "rounding_category": "Border radius",
+      "container_border_radius": "Container border radius",
+      "button_border_radius": "Button border radius",
+      "input_border_radius": "Input border radius",
+      "image_border_radius": "Image border radius"
+    },
+    "typography": {
+      "name": "Typography",
+      "headings_category": "Headings",
+      "heading_font": "Heading font",
+      "font_info": "Fonts with different weights may appear differently",
+      "heading_casing": "Heading text transform",
+      "heading_casing_options": {
+        "normal": "Normal",
+        "lowercase": "Lowercase",
+        "uppercase": "Uppercase"
+      },
+      "heading_size_factor": "Heading size factor",
+      "heading_size_factor_info": "Adjusts the size of all headings proportionally",
+      "heading_letter_spacing": "Heading letter spacing",
+      "body_text_category": "Body text",
+      "body_font": "Body font",
+      "body_base_size_mobile": "Base font size (mobile)",
+      "body_base_size_desktop": "Base font size (desktop)",
+      "body_letter_spacing": "Body letter spacing",
+      "button_category": "Button text",
+      "button_text_font": "Button font",
+      "button_text_font_options": {
+        "heading": "Heading font",
+        "body": "Body font"
+      },
+      "button_casing": "Button text transform",
+      "button_casing_options": {
+        "normal": "Normal",
+        "lowercase": "Lowercase",
+        "uppercase": "Uppercase"
+      },
+      "button_letter_spacing": "Button letter spacing"
+    },
+    "colors": {
+      "name": "Colors",
+      "general_category": "General",
+      "heading_color": "Heading",
+      "body_text_color": "Body text",
+      "color_scheme": "Color scheme",
+      "default_color_scheme": "Default color scheme",
+      "default_color_scheme_info": "Used on secondary pages like customer accounts or policy pages.",
+      "notification_category": "Notification",
+      "success_color": "Success",
+      "warning_color": "Warning",
+      "error_color": "Error",
+      "button_category": "Button",
+      "button_icon_category": "Button with icon",
+      "button_icon_category_info": "Applies to circled buttons such as navigation or close buttons.",
+      "modal_category": "Modal/drawer",
+      "product_category": "Product",
+      "product_rating_color": "Star rating",
+      "on_sale_accent": "On sale accent",
+      "sold_out_badge_background": "Sold out badge",
+      "custom_badge": "Custom badge",
+      "custom_badge_info": "[Learn more](https://prestige-theme.helpscoutdocs.com/article/437-custom-badges-with-metafields)"
+    }
+  },
   "labels": {
     "alignment": "Alignment",
     "background": "Background",
@@ -71,6 +141,21 @@
       "title": "Title",
       "subtitle": "Subtitle",
       "normal": "Normal text"
+    }
+  },
+  "global": {
+    "sizes": {
+      "x_small": "Extra small",
+      "small": "Small",
+      "medium": "Medium",
+      "large": "Large",
+      "x_large": "Extra large"
     },
+    "colors": {
+      "background": "Background",
+      "background_gradient": "Background gradient",
+      "text": "Text",
+      "icon": "Icon"
+    }
   }
 }

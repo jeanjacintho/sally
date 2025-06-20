@@ -1,16 +1,11 @@
-/** Critical CSS for the theme. This file is included on every page. */
 
-/* Reset styles inspired by https://www.joshwcomeau.com/css/custom-css-reset/ */
-* {
+*, :before, :after {
   box-sizing: border-box;
-  margin: 0;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  min-height: 100svh;
+  border-style: solid;
+  border-width: 0;
+  border-color: rgb(var(---border-color));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html:has(dialog[scroll-lock][open], details[scroll-lock][open]) {
@@ -73,9 +68,18 @@ p:empty {
 
 /** Theme styles below */
 body {
-  font-family: var(--font-primary--family);
-  background-color: var(--color-background);
-  color: var(--color-foreground);
+  background: rgb(var(--page-background));
+  font: var(--text-font-style) var(--text-font-weight) var(--text-base) / 1.65 var(--text-font-family);
+  letter-spacing: var(--text-letter-spacing);
+  margin: 0;
+  position: relative;
+}
+
+.color-scheme {
+  background-color: rgb(var(--background));
+  background-image: var(--background-gradient);
+  color: rgb(var(--text-color));
+  border-color: rgb(var(--border-color));
 }
 
 /** Section layout utilities */

@@ -1,6 +1,18 @@
 <!doctype html>
 <html lang="{{ request.locale.iso_code }}">
   <head>
+
+    {%- comment -%}Few prefetch to increase performance on commonly used third-parties{%- endcomment -%}
+    <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+
+    {%- unless settings.heading_font.system? -%}
+      <link rel="preload" href="{{ settings.heading_font | font_url }}" as="font" type="font/woff2" crossorigin>
+    {%- endunless -%}
+
+    {%- unless settings.text_font.system? -%}
+      <link rel="preload" href="{{ settings.text_font | font_url }}" as="font" type="font/woff2" crossorigin>
+    {%- endunless -%}
+
     {% # Inlined CSS Variables %}
     {% render 'css-variables' %}
 
@@ -12,7 +24,7 @@
     <script type="module" src="{{ 'theme.js' | asset_url }}"></script>
     {{ content_for_header }}
   </head>
-  <body>
+  <body class="color-scheme color-scheme--{{ settings.default_color_scheme.id }}">
     {% sections 'header-group' %}
 
     {{ content_for_layout }}
