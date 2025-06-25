@@ -157,5 +157,21 @@
       "text": "Text",
       "icon": "Icon"
     }
+  },
+  "sections": {
+    "announcement_bar": {
+      "name": "Announcement bar",
+      "enable_sticky_bar": "Enable sticky announcement bar",
+      "auto_rotate_between_messages": "Auto-rotate between messages",
+      "cycle_speed": "Cycle speed (seconds)",
+      "desktop_text_size": "Desktop text size (px)",
+      "mobile_text_size": "Mobile text size (px)",
+      "blocks": {
+        "message": {
+          "name": "Message",
+          "text": "Announcement text"
+        }
+      }
+    }
   }
 }
