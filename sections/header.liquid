@@ -1,4 +1,16 @@
-<header class="color-scheme color-scheme--{{ section.settings.color_scheme.id }}">
+<style>
+  :root {
+    --header-is-sticky: {% if section.settings.enable_sticky %}1{% else %}0{% endif %};
+  }
+
+  #shopify-section-{{ section.id }} {
+    --header-grid: "header-title header-menu header-icons" / minmax(0, 1fr) auto minmax(0, 1fr);
+    --header-padding-block: 1rem;
+    position: relative;
+    z-index: 5;
+  }
+</style>
+<header class="header color-scheme color-scheme--{{ section.settings.color_scheme.id }}">
   <h2 class="header__title">
     {{ shop.name | link_to: routes.root_url }}
   </h2>
@@ -25,22 +37,41 @@
 </header>
 
 {% stylesheet %}
-  header {
-    height: 5rem;
-    display: flex;
+  .header {
+    grid: var(--header-grid);
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    column-gap: 1.25rem;
+    row-gap: var(--header-padding-block);
+    background: rgb(var(--background));
+    color: rgb(var(--text-color));
+    padding-block-start: var(--header-padding-block);
+    padding-block-end: var(--header-padding-block);
+    padding-inline-start: var(--container-gutter);
+    padding-inline-end: var(--container-gutter);
+    display: grid;
+    position: relative;
+  }
+
+  .header__title {
+    grid-area: header-title;
+  }
+  .header__menu {
+    grid-area: header-menu;
+  }
+  .header__icons {
+    grid-area: header-icons;
+    justify-content: end;
   }
   header a {
     position: relative;
     text-decoration: none;
-    color: var(--color-foreground);
+    color: rgb(var(--text-color));
   }
   header a sup {
     position: absolute;
     left: 100%;
     overflow: hidden;
-    max-width: var(--page-margin);
   }
   header svg {
     width: 2rem;
