@@ -17,7 +17,24 @@
     "checkout": "Checkout",
     "title": "Cart",
     "update": "Update",
-    "remove": "Remove"
+    "remove": "Remove",
+    "general": {
+      "title": "Cart",
+      "empty": "Your cart is empty",
+      "add_order_note": "Add order note",
+      "order_note": "Order note",
+      "note_placeholder": "How can we help you?",
+      "save_note": "Save note",
+      "taxes_and_shipping_at_checkout": "Taxes and shipping calculated at checkout",
+      "view_cart": "View cart",
+      "checkout": "Checkout"
+    },
+    "shipping_estimator": {
+      "no_results": "No shipping rates available",
+      "one_result": "1 shipping rate available",
+      "multiple_results": "{{ count }} shipping rates available",
+      "error": "Unable to calculate shipping rates"
+    }
   },
   "customers": {
     "login": {
@@ -44,15 +61,191 @@
   },
   "search": {
     "title": "Search",
-    "placeholder": "Search articles, pages, or products",
+    "placeholder": "Search for...",
     "submit": "Search",
     "no_results_html": "No results found for {{ terms }}",
-    "results_for_html": "{{ count }} results found for {{ terms }}"
+    "results_for_html": "{{ count }} results found for {{ terms }}",
+    "general": {
+      "title": "Search",
+      "search_placeholder": "Search for..."
+    }
   },
   "general": {
     "accessibility": {
       "previous": "Previous",
-      "next": "Next"
+      "next": "Next",
+      "close": "Close",
+      "skip_to_content": "Skip to content",
+      "go_to_item": "Go to item {{ index }}"
+    },
+    "localization": {
+      "country": "Country",
+      "language": "Language"
+    },
+    "form": {
+      "max_characters": "{{ max_chars }} characters maximum"
+    },
+    "page": "Page {{ page }}",
+    "search": "Search",
+    "password": "Password",
+    "article": "Article",
+    "blog": "Blog",
+    "cart": "Cart",
+    "collections_grid": "Collections grid",
+    "footer": "Footer"
+  },
+  "header": {
+    "general": {
+      "account": "Account",
+      "login": "Login",
+      "primary_navigation": "Primary navigation",
+      "secondary_navigation": "Secondary navigation",
+      "open_menu": "Open menu",
+      "open_account": "Open account",
+      "open_search": "Open search",
+      "search": "Search",
+      "open_cart": "Open cart",
+      "cart": "Cart"
+    }
+  },
+  "product": {
+    "general": {
+      "add_to_cart_button": "Add to cart",
+      "sold_out_button": "Sold out",
+      "pre_order_button": "Pre-order",
+      "unavailable_button": "Unavailable",
+      "added_to_cart": "Added to cart",
+      "sold_out_badge": "Sold out",
+      "discount_badge_html": "Save {{ savings }}",
+      "sku": "SKU"
+    },
+    "gallery": {
+      "close": "Close gallery",
+      "zoom": "Zoom image",
+      "error": "Error loading image"
+    }
+  },
+  "sections": {
+    "announcement_bar": {
+      "name": "Announcement bar",
+      "enable_sticky_bar": "Enable sticky bar",
+      "auto_rotate_between_messages": "Auto-rotate between messages",
+      "cycle_speed": "Cycle speed",
+      "desktop_text_size": "Desktop text size",
+      "mobile_text_size": "Mobile text size",
+      "blocks": {
+        "message": {
+          "name": "Message",
+          "text": "Text"
+        }
+      }
+    },
+    "cart_drawer": {
+      "name": "Cart drawer",
+      "page_info": "This section is automatically displayed when the cart type is set to drawer.",
+      "free_shipping_bar_info": "Show a shipping message advancement on cart page and cart drawer. Configure your shipping rates to match the amount.",
+      "show_cart_note": "Show cart note",
+      "show_shipping_text": "Show shipping text",
+      "show_view_cart_button": "Show view cart button",
+      "show_checkout_button": "Show checkout button",
+      "show_price_in_checkout_button": "Show price in checkout button",
+      "cross_sell_category": "Cross-sell products",
+      "cross_sell_products": "Cross-sell products",
+      "cross_sell_products_info": "Products to suggest when customers add items to cart",
+      "cross_sell_heading": "Complete with",
+      "cross_sell_stack_products": "Stack products"
+    },
+    "header": {
+      "name": "Header",
+      "enable_sticky_header": "Enable sticky header",
+      "show_separation_border": "Show separation border",
+      "reduce_padding": "Reduce height on desktop",
+      "logo_category": "Logo",
+      "logo_size_recommendation": "280 x 80px .png recommended",
+      "navigation_category": "Navigation",
+      "menu": "Menu",
+      "mobile_menu": "Mobile menu",
+      "menu_open_trigger": "Open dropdown items on...",
+      "menu_open_trigger_info": "Click mode is forced on touch devices.",
+      "menu_open_trigger_options": {
+        "hover": "Hover",
+        "click": "Click"
+      },
+      "enable_search": "Enable search",
+      "sidebar_navigation_category": "Sidebar navigation",
+      "sidebar_text_font": "Sidebar text font",
+      "sidebar_text_font_options": {
+        "heading": "Heading font",
+        "body": "Body font"
+      },
+      "sidebar_show_dividers": "Show dividers",
+      "desktop_category": "Desktop",
+      "layout": "Layout",
+      "layout_options": {
+        "logo_left_navigation_inline": "Logo left, navigation inline",
+        "logo_left_navigation_center": "Logo left, navigation center",
+        "logo_center_navigation_inline": "Logo center, navigation inline",
+        "logo_center_navigation_below": "Logo center, navigation below",
+        "drawer": "Drawer"
+      },
+      "show_icons": "Show icons"
+    }
+  },
+  "global": {
+    "colors": {
+      "scheme": "Color scheme"
+    },
+    "image": {
+      "image": "Image",
+      "width": "Width",
+      "mobile_width": "Mobile width"
+    },
+    "sizes": {
+      "x_small": "Extra small",
+      "small": "Small",
+      "medium": "Medium",
+      "large": "Large",
+      "x_large": "Extra large"
+    }
+  },
+  "labels": {
+    "alignment": "Alignment",
+    "background": "Background",
+    "foreground": "Foreground",
+    "grid_gap": "Grid spacing",
+    "grid_item_width": "Grid item width",
+    "input_corner_radius": "Input corner radius",
+    "layout_direction": "Layout direction",
+    "menu": "Menu",
+    "padding": "Padding",
+    "page_margin": "Page margin",
+    "page_width": "Page width",
+    "show_payment_icons": "Show payment icons",
+    "text_style": "Text style",
+    "text": "Text"
+  },
+  "options": {
+    "alignment": {
+      "left": "Left",
+      "center": "Center",
+      "right": "Right"
+    },
+    "direction": {
+      "horizontal": "Horizontal",
+      "vertical": "Vertical"
+    },
+    "page_width": {
+      "narrow": "Narrow",
+      "wide": "Wide"
+    },
+    "size": {
+      "large": "Large",
+      "small": "Small"
+    },
+    "text_style": {
+      "title": "Title",
+      "subtitle": "Subtitle",
+      "normal": "Normal text"
     }
   }
 }

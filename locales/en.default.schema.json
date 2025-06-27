@@ -101,6 +101,29 @@
       "sold_out_badge_background": "Sold out badge",
       "custom_badge": "Custom badge",
       "custom_badge_info": "[Learn more](https://prestige-theme.helpscoutdocs.com/article/437-custom-badges-with-metafields)"
+    },
+    "cart": {
+      "name": "Cart",
+      "cart_type": "Cart type",
+      "cart_type_options": {
+        "drawer": "Drawer",
+        "message": "Message",
+        "page": "Page"
+      },
+      "cart_icon": "Cart icon",
+      "cart_icon_options": {
+        "shopping_bag": "Shopping bag",
+        "shopping_bag_sharp": "Shopping bag (sharp)",
+        "shopping_cart": "Shopping cart",
+        "tote_bag": "Tote bag"
+      },
+      "empty_cart_link": "Empty cart link",
+      "free_shipping_bar_category": "Free shipping message",
+      "free_shipping_bar_category_info": "Show a shipping message advancement on cart page and cart drawer. Configure your [shipping rates](/admin/settings/shipping) to match the amount.",
+      "show_shipping_bar": "Show shipping message",
+      "free_shipping_bar_minimum_amount": "Free shipping minimum amount",
+      "free_shipping_bar_minimum_amount_placeholder": "E.g.: 50",
+      "free_shipping_bar_minimum_amount_info": "Indicate the value in your store main currency, without currency code. To have different amount per market, use the [Translate & Adapt app](https://apps.shopify.com/translate-and-adapt)."
     }
   },
   "labels": {
@@ -155,10 +178,85 @@
       "background": "Background",
       "background_gradient": "Background gradient",
       "text": "Text",
-      "icon": "Icon"
+      "icon": "Icon",
+      "scheme": "Color scheme"
+    },
+    "localization": {
+      "country_region_selector_category": "Country/region selector",
+      "country_region_selector_category_info": "Allow customers to select their country/region for shipping and currency.",
+      "show_country_region_selector": "Show country/region selector",
+      "show_country_name": "Show country name",
+      "show_country_flag": "Show country flag",
+      "language_selector_category": "Language selector",
+      "language_selector_category_info": "Allow customers to select their preferred language.",
+      "show_locale_selector": "Show language selector"
+    },
+    "position": {
+      "left": "Left",
+      "right": "Right"
+    },
+    "image": {
+      "image": "Image",
+      "width": "Width",
+      "mobile_width": "Mobile width"
+    },
+    "text": {
+      "heading": "Heading",
+      "text": "Text",
+      "link": "Link"
     }
   },
   "sections": {
+    "header": {
+      "name": "Header",
+      "enable_sticky_header": "Enable sticky header",
+      "show_separation_border": "Show separation border",
+      "reduce_padding": "Reduce height on desktop",
+      "logo_category": "Logo",
+      "logo_size_recommendation": "280 x 80px .png recommended",
+      "navigation_category": "Navigation",
+      "menu": "Menu",
+      "mobile_menu": "Mobile menu",
+      "menu_open_trigger": "Open dropdown items on...",
+      "menu_open_trigger_info": "Click mode is forced on touch devices.",
+      "menu_open_trigger_options": {
+        "hover": "Hover",
+        "click": "Click"
+      },
+      "enable_search": "Enable search",
+      "sidebar_navigation_category": "Sidebar navigation",
+      "sidebar_text_font": "Text font",
+      "sidebar_text_font_options": {
+        "heading": "Heading",
+        "body": "Body text"
+      },
+      "sidebar_show_dividers": "Show sidebar menu dividers",
+      "desktop_category": "Desktop",
+      "layout": "Layout",
+      "layout_options": {
+        "logo_left_navigation_inline": "Logo left, navigation inline",
+        "logo_left_navigation_center": "Logo left, navigation center",
+        "logo_center_navigation_inline": "Logo center, navigation inline",
+        "logo_center_navigation_below": "Logo center, navigation below",
+        "drawer": "Drawer"
+      },
+      "show_icons": "Show icons",
+      "transparent_header_category": "Transparent header",
+      "transparent_header_info": "To show a transparent header, add a compatible section (such as slideshow) as the first section. [Learn more](https://prestige-theme.helpscoutdocs.com/article/501-transparent-header)",
+      "transparent_header_logo_image": "Logo image",
+      "transparent_header_logo_size_recommendation": "Use the same dimensions as main logo.",
+      "blocks": {
+        "mega_menu": {
+          "name": "Mega menu",
+          "menu_item": "Menu item",
+          "menu_item_info": "Enter menu item to apply a mega menu dropdown. [Learn more](https://prestige-theme.helpscoutdocs.com/article/412-mega-menu).",
+          "images_position": "Images position",
+          "image_1": "Image 1",
+          "image_2": "Image 2",
+          "image_size_recommendation": "650 x 400px .jpg recommended"
+        }
+      }
+    },
     "announcement_bar": {
       "name": "Announcement bar",
       "enable_sticky_bar": "Enable sticky announcement bar",
@@ -172,6 +270,21 @@
           "text": "Announcement text"
         }
       }
+    },
+    "cart_drawer": {
+      "name": "Cart drawer",
+      "page_info": "This section is automatically displayed when the cart type is set to drawer.",
+      "free_shipping_bar_info": "Show a shipping message advancement on cart page and cart drawer. Configure your shipping rates to match the amount.",
+      "show_cart_note": "Show cart note",
+      "show_shipping_text": "Show shipping text",
+      "show_view_cart_button": "Show view cart button",
+      "show_checkout_button": "Show checkout button",
+      "show_price_in_checkout_button": "Show price in checkout button",
+      "cross_sell_category": "Cross-sell products",
+      "cross_sell_products": "Cross-sell products",
+      "cross_sell_products_info": "Products to suggest when customers add items to cart",
+      "cross_sell_heading": "Complete with",
+      "cross_sell_stack_products": "Stack products"
     }
   }
 }

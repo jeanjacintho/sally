@@ -2,9 +2,6 @@
 const animate11 = window.moduleRegistry.animate;
 const EffectCarousel = window.EffectCarousel || window.moduleRegistry?.EffectCarousel;
 
-if (!EffectCarousel) {
-    throw new Error('EffectCarousel must be loaded before AnnouncementBarCarousel');
-}
 var AnnouncementBarCarousel = class extends EffectCarousel {
     anima
   createOnChangeAnimationControls(fromSlide, toSlide) {

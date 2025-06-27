@@ -2,7 +2,7 @@
   {
     "name": "theme_info",
     "theme_name": "Sally",
-    "theme_version": "0.1.0",
+    "theme_version": "0.5.0",
     "theme_author": "Jean Jacintho",
     "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
     "theme_support_url": "https://support.shopify.com/"
@@ -247,47 +247,6 @@
     ]
   },
   {
-    "name": "t:general.layout",
-    "settings": [
-      {
-        "type": "select",
-        "id": "max_page_width",
-        "label": "t:labels.page_width",
-        "options": [
-          {
-            "value": "90rem",
-            "label": "t:options.page_width.narrow"
-          },
-          {
-            "value": "110rem",
-            "label": "t:options.page_width.wide"
-          }
-        ],
-        "default": "90rem"
-      },
-      {
-        "type": "range",
-        "id": "min_page_margin",
-        "min": 10,
-        "max": 100,
-        "step": 1,
-        "unit": "px",
-        "label": "t:labels.page_margin",
-        "default": 20
-      },
-      {
-        "type": "range",
-        "id": "input_corner_radius",
-        "min": 0,
-        "max": 10,
-        "step": 1,
-        "unit": "px",
-        "label": "t:labels.input_corner_radius",
-        "default": 4
-      }
-    ]
-  },
-  {
     "name": "t:theme_settings.colors.name",
     "settings": [
       {
@@ -432,6 +391,127 @@
         "id": "error_color",
         "label": "t:theme_settings.colors.error_color",
         "default": "#d9534f"
+      }
+    ]
+  },
+  {
+    "name": "t:theme_settings.animation.name",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "t:theme_settings.animation.minimize_motion_paragraph"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_page_transition",
+        "label": "t:theme_settings.animation.show_page_transition",
+        "info": "t:theme_settings.animation.show_page_transition_info",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_button_transition",
+        "label": "t:theme_settings.animation.show_button_transition",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_image_zoom_on_hover",
+        "label": "t:theme_settings.animation.show_image_zoom_on_hover",
+        "info": "t:theme_settings.animation.show_image_zoom_on_hover_info",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "stagger_products_apparition",
+        "label": "t:theme_settings.animation.stagger_products_apparition",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "stagger_blog_posts_apparition",
+        "label": "t:theme_settings.animation.stagger_blog_posts_apparition",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "stagger_menu_apparition",
+        "label": "t:theme_settings.animation.stagger_menu_apparition",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "t:theme_settings.cart.name",
+    "settings": [
+      {
+        "type": "select",
+        "id": "cart_type",
+        "label": "t:theme_settings.cart.cart_type",
+        "options": [
+          {
+            "value": "drawer",
+            "label": "t:theme_settings.cart.cart_type_options.drawer"
+          },
+          {
+            "value": "message",
+            "label": "t:theme_settings.cart.cart_type_options.message"
+          },
+          {
+            "value": "page",
+            "label": "t:theme_settings.cart.cart_type_options.page"
+          }
+        ],
+        "default": "drawer"
+      },
+      {
+        "type": "select",
+        "id": "cart_icon",
+        "label": "t:theme_settings.cart.cart_icon",
+        "options": [
+          {
+            "value": "shopping_bag",
+            "label": "t:theme_settings.cart.cart_icon_options.shopping_bag"
+          },
+          {
+            "value": "shopping_bag_sharp",
+            "label": "t:theme_settings.cart.cart_icon_options.shopping_bag_sharp"
+          },
+          {
+            "value": "shopping_cart",
+            "label": "t:theme_settings.cart.cart_icon_options.shopping_cart"
+          },
+          {
+            "value": "tote_bag",
+            "label": "t:theme_settings.cart.cart_icon_options.tote_bag"
+          }
+        ],
+        "default": "shopping_bag"
+      },
+      {
+        "type": "url",
+        "id": "cart_empty_cart_link",
+        "label": "t:theme_settings.cart.empty_cart_link",
+        "default": "/collections/all"
+      },
+      {
+        "type": "header",
+        "content": "t:theme_settings.cart.free_shipping_bar_category",
+        "info": "t:theme_settings.cart.free_shipping_bar_category_info"
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_show_free_shipping_bar",
+        "label": "t:theme_settings.cart.show_shipping_bar",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "cart_free_shipping_threshold",
+        "label": "t:theme_settings.cart.free_shipping_bar_minimum_amount",
+        "placeholder": "t:theme_settings.cart.free_shipping_bar_minimum_amount_placeholder",
+        "info": "t:theme_settings.cart.free_shipping_bar_minimum_amount_info",
+        "default": "50"
       }
     ]
   }

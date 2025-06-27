@@ -29,4 +29,46 @@
         <svg aria-hidden="true" focusable="false" fill="none" width="{{ width | default: 16 }}" class="{{ class | strip }}" viewBox="0 0 16 18">
             <path d="m5 17 8-8-8-8" stroke="currentColor" stroke-linecap="square"/>
         </svg>
+
+    {%- when 'hamburger' -%}
+    <svg aria-hidden="true" fill="none" focusable="false" width="{{ width | default: 24 }}" class="{{ class | strip }}" viewBox="0 0 24 24">
+      <path d="M1 19h22M1 12h22M1 5h22" stroke="currentColor" stroke-width="{{ stroke_width | default: settings.icon_stroke_width }}" stroke-linecap="square"/>
+    </svg>
+
+  {%- when 'account' -%}
+    <svg aria-hidden="true" fill="none" focusable="false" width="{{ width | default: 24 }}" class="{{ class | strip }}" viewBox="0 0 24 24">
+      <path d="M16.125 8.75c-.184 2.478-2.063 4.5-4.125 4.5s-3.944-2.021-4.125-4.5c-.187-2.578 1.64-4.5 4.125-4.5 2.484 0 4.313 1.969 4.125 4.5Z" stroke="currentColor" stroke-width="{{ stroke_width | default: settings.icon_stroke_width }}" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M3.017 20.747C3.783 16.5 7.922 14.25 12 14.25s8.217 2.25 8.984 6.497" stroke="currentColor" stroke-width="{{ stroke_width | default: settings.icon_stroke_width }}" stroke-miterlimit="10"/>
+    </svg>
+
+  {%- when 'search' -%}
+    <svg aria-hidden="true" fill="none" focusable="false" width="{{ width | default: 24 }}" class="{{ class | strip }}" viewBox="0 0 24 24">
+      <path d="M10.364 3a7.364 7.364 0 1 0 0 14.727 7.364 7.364 0 0 0 0-14.727Z" stroke="currentColor" stroke-width="{{ stroke_width | default: settings.icon_stroke_width }}" stroke-miterlimit="10"/>
+      <path d="M15.857 15.858 21 21.001" stroke="currentColor" stroke-width="{{ stroke_width | default: settings.icon_stroke_width }}" stroke-miterlimit="10" stroke-linecap="round"/>
+    </svg>
+
+  {%- when 'cart' -%}
+    <svg aria-hidden="true" fill="none" focusable="false" width="{{ width | default: 24 }}" class="{{ class | strip }}" viewBox="0 0 24 24">
+      {%- case settings.cart_icon -%}
+        {%- when 'shopping_bag' -%}
+          <path d="M4.75 8.25A.75.75 0 0 0 4 9L3 19.125c0 1.418 1.207 2.625 2.625 2.625h12.75c1.418 0 2.625-1.149 2.625-2.566L20 9a.75.75 0 0 0-.75-.75H4.75Zm2.75 0v-1.5a4.5 4.5 0 0 1 4.5-4.5v0a4.5 4.5 0 0 1 4.5 4.5v1.5" stroke="currentColor" stroke-width="{{ stroke_width | default: settings.icon_stroke_width }}" stroke-linecap="round" stroke-linejoin="round"/>
+
+        {%- when 'shopping_bag_sharp' -%}
+          <path d="M21.5 21.5v-15h-19v15h19ZM8 6V5a4 4 0 1 1 8 0v1" stroke="currentColor" stroke-width="{{ stroke_width | default: settings.icon_stroke_width }}"/>
+
+        {%- when 'shopping_cart' -%}
+          <path d="M10 7h13l-4 9H7.5L5 3H1" stroke="currentColor" stroke-width="{{ stroke_width | default: settings.icon_stroke_width }}" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="9" cy="20" r="1" stroke="currentColor" stroke-width="{{ stroke_width | default: settings.icon_stroke_width }}" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="17" cy="20" r="1" stroke="currentColor" stroke-width="{{ stroke_width | default: settings.icon_stroke_width }}" stroke-linecap="round" stroke-linejoin="round"/>
+
+        {%- when 'tote_bag' -%}
+          <path d="M2 10h20l-4 11H6L2 10Zm14-3a4 4 0 0 0-8 0" stroke="currentColor" stroke-width="{{ stroke_width | default: settings.icon_stroke_width }}" stroke-linecap="round" stroke-linejoin="round"/>
+      {%- endcase -%}
+    </svg>
+
+  {%- when 'close' -%}
+    <svg aria-hidden="true" focusable="false" fill="none" width="{{ width | default: 16 }}" class="{{ class | strip }}" viewBox="0 0 16 16">
+      <path d="m1 1 14 14M1 15 15 1" stroke="currentColor" stroke-width="{{ stroke_width | default: settings.icon_stroke_width }}"/>
+    </svg>
+
 {%- endcase -%}
